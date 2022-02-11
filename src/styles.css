@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Gluten:wght@700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  max-width: 600px;
+  font-family: "Gluten", cursive;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+form {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 2rem;
+  border: 1px solid #23343f;
+  padding: 1rem 2.4rem;
+}
+
+.current-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  background-color: #87cefa;
+  color: #23343f;
+}
+
+.desc-container,
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc-container {
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex: 2 0 auto;
+}
+
+.city {
+  font-size: 2.4rem;
+}
+
+.icon-container {
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp {
+  font-size: 3.6rem;
+}
+
+.toggle-wrapper {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.toggle-container {
+  width: 50px;
+  height: 24px;
+  padding: 0.2rem;
+  border: 1px solid #23343f;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.toggle {
+  background: #23343f;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.switch {
+  justify-content: flex-end;
+}
+
+footer {
+  padding: 1.6rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+a {
+  padding: 0 0.6rem;
+  text-decoration: none;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23343fe0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+svg {
+  width: 96px;
+  height: 96px;
+  fill: #87cefa;
+  animation: rotate 2s linear infinite;
+}
+
+.alert {
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  color: white;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  top: 1.6rem;
+  right: 1.6rem;
+  left: 1.6rem;
+  background: rgb(200, 75, 50);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
